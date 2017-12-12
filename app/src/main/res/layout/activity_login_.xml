@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="login"
+            type="lilin.bwie.com.firsthand.bean.LoginBean">
+        </variable>
+    </data>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:id="@+id/yu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/yuzhilai"/>
+    <LinearLayout
+        android:id="@+id/zhu"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yu"
+        android:gravity="center"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableLeft="@drawable/shouji"
+            android:text="手机号码"/>
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="+86"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zhu"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableLeft="@drawable/mima"
+            android:text="密码"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="新密码不少于6位数"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wangji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="5dp"
+        android:text="忘记密码" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:text="登录"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="#FF6565"
+        android:layout_below="@+id/wangji"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="手机号快速注册"
+        android:background="@drawable/button_bian"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="用社区账号登录" />
+
+    <ImageView
+        android:id="@+id/weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/textView2"
+        app:srcCompat="@drawable/weixin" />
+
+    <ImageView
+        android:id="@+id/qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/qq"
+        android:layout_above="@+id/textView3"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginStart="26dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/weixin"
+        android:layout_below="@+id/weixin"
+        android:text="微信登录" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/qq"
+        android:layout_below="@+id/qq"
+        android:text="QQ登录" />
+</RelativeLayout>
+</layout>
